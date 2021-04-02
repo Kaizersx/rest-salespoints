@@ -13,6 +13,7 @@ public class Coordinate {
 
      }
 
+
     public double getLat() {
         return lat;
     }
@@ -30,9 +31,9 @@ public class Coordinate {
     }
 
 
-    private String URL="https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng+"&key=AIzaSyA2oY0hwe-NqI11vRi0b15n-rvWOLhp6t0";
+
 
     public String getURL() {
-        return URL;
+        return "https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address?lat="+lat+"&lon="+lng+"&token=9010b79082c1d8e1fe0320c9f12f377d556f2238";
     }
 }
